@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+nav, .search{
+    background: linear-gradient(90deg, #ff8c00, #ffc04d);
+    color: white;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.logo img
+{
+    height:100px;
+    width:100px;
+    border-radius: 80px;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+}
+
+#head{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+#head a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.search
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 150px 20px 20px 20px; 
+}
+
+.search input{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+.search button{
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    color: orange;
+}
+
+#cat {
+    margin-top: 40px;
+    padding:20px;
+}
+
+.list h1 {
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.display
+{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    /* grid no.of arguments,auto */
+    grid-template-rows: repeat(4,auto);
+    gap: 5% 5%;
+}
+
+.category-item {
+    cursor: pointer;
+}
+
+.category-item img {
+    width: 100%;
+    height: 150px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.category-item p {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#recipes {
+    padding: 30px 20px;
+}
+
+.recipes h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: orange;
+}
+
+.recipe-box {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.recipe-box:hover{
+    box-shadow:0 2px 8px black;
+}
+
+.recipe-box h3 {
+    margin-bottom: 8px;
+}
+
+.recipe-box p {
+    margin-bottom: 5px;
+}
+
+footer{
+    background: linear-gradient(90deg, #ff8c00, #ffc04d);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
+}

@@ -1,0 +1,97 @@
+/* color palette */
+:root {
+    --red: #CC0001;
+    --white: #FFFFFF;
+    --blue: #000566;
+    --yellow: #FCCC02;
+}
+/* reset stylesheet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* page setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* alternative red and white stripes*/
+/*flag aspect ratio 1:2 for height*/
+.flag {
+    width: 100vw;
+    height: 50vw;             
+    max-height: 100vh;
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--red) 0%,
+        var(--red) calc(100% / 14),
+        var(--white) calc(100% / 14),
+        var(--white) calc(2 * (100% / 14))
+    );
+    position: relative;
+}
+/* blue-box*/
+.blue-box {
+    width: 50%;
+    height: calc(8 * (100% / 14));
+    background: var(--blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.moon {
+    width: 40%;
+    height: 65%;
+    background: var(--yellow);
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    margin-left: 15%;
+}
+/* halfmoon */
+.inner-cut {
+    width: 90%;
+    height: 90%;
+    background: var(--blue);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+/* sunrise traingles */
+.star {
+    width: 30%;
+    height: 45%;
+    background: var(--yellow);
+    position: absolute;
+    top: 20%;
+    left: 64%;
+    margin-left: -18%;
+    margin-top: 6%;
+    clip-path: polygon(50% 0%, 55% 25%, 72% 3%, 65% 29%, 90% 17%, 72% 38%, 99% 37%, 74% 48%, 99% 59%, 72% 59%, 90% 80%, 65% 67%, 72% 93%, 55% 71%, 50% 98%, 44% 72%, 27% 93%, 35% 67%, 10% 79%, 28% 58%, 0% 59%, 26% 48%, 0% 37%, 28% 38%, 10% 17%, 35% 29%, 28% 3%, 44% 25%);
+}
+/* responsibe behaviour*/
+/* Mobile (max 480px) */
+@media (max-width: 480px) {
+    .flag {
+        width: 100vw;
+        height: 50vw;
+    }
+}
+/* tablet (481px–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .flag {
+        width: 100vw;
+        height: 50vw;
+    }
+}
+/* desktop (1200px+) */
+@media (min-width: 1200px) {
+    .flag {
+        max-width: 1759px;
+    }
+}
