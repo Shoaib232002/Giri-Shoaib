@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Garamond;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 10px;
+    gap:10px;
+}
+header{
+    margin-right: 120px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.split{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 10px;
+    gap:30px;
+}
+h3{
+    padding:5px 0 5px;
+    letter-spacing: 2px;
+}
+hr{
+    border: 1px solid black;
+}
+.remove-indent{
+    margin-right: 10px;
+}
+.certificates-extras-softskills-langs{
+    display: flex;
+    width:170px;
+    align-content: space-evenly;
+    flex-direction: column;
+    padding:0 10px 0;
+}
+.certificates-extras-softskills-langs hr{
+    margin-bottom: 10px;
+}
+.profile-skills-projects-experience-education{
+    width: 340px;
+}
+.profile-skills-projects-experience-education hr{
+    margin-bottom: 5px;
+}
+.spacing{
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    margin-left: 10px;
+}

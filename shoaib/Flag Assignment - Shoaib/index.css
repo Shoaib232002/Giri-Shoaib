@@ -1,0 +1,96 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --blue:#063581;
+  --red:#D21034;
+  --white:#ffffff;
+  --green:#259543;
+
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* flag dimensions */
+.flag {
+  height: 38em;
+  width: 60em;
+  margin-top: 1em;
+  z-index: -2;
+  transition: all 1s ease-in-out;
+  background: linear-gradient(147deg, var(--blue) 39.5%, var(--white) 39.5% 42%, var(--red) 42% 57.5%, var(--white) 57.5% 60%, var(--green) 60% 100%);
+}
+.sun-circle {
+  height: 6.5em;
+  width: 6.5em;
+  top: 17%;
+  left: 14%;
+  border: solid 0.5em var(--blue);
+  border-radius: 50%;
+  position: relative;
+}
+.sun-ray {
+  height: 13em;
+  width: 13em;
+  top: -65%;
+  left: -65%;
+  position: absolute;
+  background: #FDCE00;
+  transform: rotate(15deg);
+  padding:2px;
+  z-index: -1;
+  clip-path: polygon(62% 5%, 62% 29%, 83% 17%, 71% 38%, 94% 38%, 74% 50%, 94% 62%, 71% 62%, 83% 82%, 62% 71%, 61% 93%, 50% 74%, 38% 93%, 38% 71%, 18% 82%, 29% 62%, 6% 62%, 25% 50%, 6% 38%, 28% 38%, 17% 17%, 37% 28%, 38% 5%, 50% 25%);
+}
+/* media Queries for reponsiveness of mobile and tablet*/
+@media (max-width:768px) {
+  .flag{
+    height: 18.75em;
+    width: 28.5em;
+  }
+  .sun-circle{
+    height: 3em;
+    width: 3em;
+    border: solid 0.3em var(--blue);
+  }
+  .sun-ray{
+    height: 6.75em;
+    width: 6.75em;
+  }
+}
+@media (max-width:480px) {
+  .flag{
+    height: 9em;
+    width: 14em;
+  }
+  .sun-circle{
+    height: 1.25em;
+    width: 1.25em;
+    border: solid 0.15em var(--blue);
+  }
+  .sun-ray{
+    height: 2.65em;
+    width: 2.65em;
+  }
+}
+@media (min-width:1200px) {
+  .flag{
+    height: 880px;
+    width: 1320px;
+  }
+  .sun-circle{
+    height: 9.5em;
+    width: 9.5em;
+    border: solid 0.7em var(--blue);
+  }
+  .sun-ray{
+    height: 20em;
+    width: 20em;
+    top:-55%;
+    left:-55%;
+  }
+}

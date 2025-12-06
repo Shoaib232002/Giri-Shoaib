@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0b167c;
+    padding: 15px;
+    align-items: center;
+}
+
+.navlinks {
+    display: flex;
+    gap: 75px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li:hover {
+    transition: color 0.5s ease;
+    transform: scale(1.1);
+    color: rgb(193, 186, 186);
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#FAQs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    padding: 10px;
+    border-radius: 30px 0px 0px 30px;
+    border: solid rgb(233, 228, 228) 1px;
+    width: 400px;
+    align-items: center;
+    text-indent: 5px;
+}
+
+.search button {
+    padding: 10px 20px 10px 10px;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+    background-color: #0b167c;
+    cursor: pointer;
+    border: 0;
+}
+
+.search button:hover {
+    background-color: #5b1ff4;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.cards {
+    height: 75px;
+    width: 300px;
+    border: solid rgb(233, 228, 228) 1px;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    box-shadow: 2px 2px 8px  #5b1ff4;
+}
+
+.cards img {
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.cards:hover {
+    animation-name: float;
+    animation-timing-function:ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.arrow img {
+    height: 50px;
+    width: 50px;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.section1 img {
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.section1 img:hover {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.section3 img {
+    height: 450px;
+    width: 500px;
+    border-radius: 30px;
+
+}
+
+.section3 img:hover {
+    animation: floating 3s ease-in-out infinite;
+}
+
+.QC {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Qna {
+    flex-direction: column;
+    height: 75px;
+    width: 600px;
+    border: solid rgb(236, 234, 234) 1px;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px grey;
+    overflow: hidden;
+    transition-property: height, overflow;
+    transition-duration: 0s;
+    transition-timing-function:  step-end;
+}
+.Qna p{
+    margin: 5px;
+    padding: 5px;
+}
+.Qna:hover{
+    overflow: visible;
+    height: 170px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin:10px;
+    padding:10px
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin:10px;
+    padding:10px
+}
+
+footer {
+    height: 100px;
+    background: #000;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes floating {
+   0%{
+    transform: translateY(0px);
+   } 
+   50% {
+        transform: translateY(-5px);
+    }
+    100%{
+    transform: translateY(0px);
+   }
+}
+
+@keyframes float {
+    0%{
+    transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100%{
+    transform: translateY(0px);
+   }
+}
+.formcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.qnaform{
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    border: solid grey 1px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px #5b1ff4;
+    padding: 20px;
+}
+.qnaform input{
+    height: 30px;
+    width: 300px;
+    border-radius: 25px;
+    border: solid grey 1px;
+    text-indent: 10px;
+    padding: 5px;
+ }
+.qnaform textarea{
+    border-radius: 25px;
+    border: solid grey 1px;
+    text-indent: 10px;
+    padding: 5px;
+ }
+
+.qnaform button{
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    background-color: #0b167c;
+    border: 0;
+    cursor: pointer;
+}
+.qnaform button:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 5px blue;
+ }

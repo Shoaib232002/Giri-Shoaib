@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff;
+    color: #000;
+}
+h1{
+    font-size: 3rem;
+}
+.centered-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+#todo-input{
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 20px 0px 0px 20px;
+    font-size:larger;
+    outline: solid 1px #00000044;
+}
+label{
+    padding: 1rem;
+    font-size: large;
+}
+.addTodo{
+    background-color: #642e05;
+    color: #fff;
+    border: 1px solid #642e05;
+    border-radius: 0px 20px 20px 0px;
+    padding: 1.2rem 2rem;
+    font-weight: bold;
+}
+.section-list{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #f9f4e2;
+    color:#000;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 5px;
+    display: flex;
+    margin: 1em;
+    gap:1em;
+    align-items: center;
+    padding: 2em 6em;
+    box-shadow: 0.1em 0.1em 1em #00000077;
+}
+.container:hover{
+    transform:translateY(-5px);
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0.3em 0.3em 2em #00000077;
+
+}
+.delete-todo{
+    background-color: #574a24;
+    color: #ffffff;
+    border-radius: 1em;
+    padding: 0.5em 1.5em;
+    font-weight: bold;
+}
+.delete-todo:hover{
+    transform:scale(1.1);
+    transition: all ease-in-out 0.2s;
+    box-shadow: 0.3em 0.3em 2em #00000077;
+}
+input[type="checkbox"]{
+    height: 0.8em;
+    width: 0.8em;
+    font-size:larger;
+}
