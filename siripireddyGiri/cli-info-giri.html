@@ -4,31 +4,32 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Command-line Tool Overview</title>
+    <title>Brainrest Command-line Tool</title>
     <link rel="stylesheet" href="./cli.css">
 </head>
 
 <body>
     <div class="container">
-        <h2>Command-line Tool Overview</h2>
-        <ul>
-            <li>Command-line tool built for Linux and macOS</li>
-            <li>Helps users take timely breaks by reminding them after working for a set duration</li>
+        <h2>Brainrest Command-line Tool Overview</h2>
+        <p>
+            Brainrest is a command-line utility designed for Linux and macOS users. It helps you take timely breaks by
+            reminding you after working for a set duration.
+        </p>
 
-            <li><strong>For Linux:</strong>
-                <code>echo "deb [trusted=yes] https://siripireddygiri.github.io/Brainrestall/repo stable main" | sudo tee /etc/apt/sources.list.d/brainrest.list</code>
-            </li>
+        <h3>Linux Installation</h3>
+        <p>Add the Brainrest repository:</p>
+        <pre><code>echo "deb [trusted=yes] https://siripireddygiri.github.io/Brainrestall/repo stable main" | sudo tee /etc/apt/sources.list.d/brainrest.list</code></pre>
+        <p>Update your package list and install Brainrest:</p>
+        <pre><code>sudo apt update && sudo apt install brainrest</code></pre>
+        <p><a href="https://github.com/SiripireddyGiri/Brainrestall" target="_blank">Reference - Linux</a></p>
 
-            <li><code>sudo apt update && sudo apt install brainrest</code></li>
-            <li><a href="https://github.com/SiripireddyGiri/Brainrestall">Reference - Linux</a></li>
-
-            <li><strong>For macOS:</strong>
-                <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code>
-            </li>
-
-            <li><code>brew tap siripireddygiri/brainrest && brew install brainrest</code></li>
-            <li><a href="https://github.com/SiripireddyGiri/homebrew-brainrest">Reference - macOS</a></li>
-        </ul>
+        <h3>macOS Installation</h3>
+        <p>Install Homebrew if it is not already installed:</p>
+        <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
+        <p>Tap the Brainrest repository and install the tool:</p>
+        <pre><code>brew tap siripireddygiri/brainrest
+brew install brainrest</code></pre>
+        <p><a href="https://github.com/SiripireddyGiri/homebrew-brainrest" target="_blank">Reference - macOS</a></p>
     </div>
 </body>
 

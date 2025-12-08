@@ -10,25 +10,40 @@ body {
     max-width: 700px;
     margin: auto;
     background: #fff;
-    padding: 25px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     margin-bottom: 15px;
     font-weight: 600;
+    color: #222;
 }
 
-ul {
-    padding-left: 20px;
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #444;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 12px 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: 15px;
 }
 
 code {
-    background: #eee;
-    padding: 3px 6px;
-    border-radius: 5px;
+    font-family: monospace;
     font-size: 14px;
+    color: #d6336c;
 }
 
 a {
