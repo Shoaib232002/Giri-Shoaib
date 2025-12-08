@@ -4,30 +4,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Command-line Tool Overview</title>
+    <title>Timezones CLI Tool</title>
     <link rel="stylesheet" href="../siripireddyGiri/cli.css">
 </head>
 
 <body>
     <div class="container">
-        <h2>Command-line Tool Overview</h2>
-        <ul>
-            <li>Command-line tool built for Linux and macOS</li>
-            <li>Helps users to check different timezones based on cities or countries</li>
+        <h2>Timezones Command-line Tool Overview</h2>
+        <p>
+            Timezones is a command-line utility for Linux and macOS that allows users to check the current time in different cities or countries.
+        </p>
 
-            <li><strong>For Linux:</strong>
-                <code>echo "deb [trusted=yes] https://Shoaib232002.github.io/timezones /" | sudo tee /etc/apt/sources.list.d/timezones.list</code>
-            </li>
+        <h3>Linux Installation</h3>
+        <p>Add the Timezones repository:</p>
+        <pre><code>echo "deb [trusted=yes] https://Shoaib232002.github.io/timezones /" | sudo tee /etc/apt/sources.list.d/timezones.list</code></pre>
+        <p>Update your package list and install Timezones:</p>
+        <pre><code>sudo apt update && sudo apt install timezones</code></pre>
+        <p><a href="https://github.com/Shoaib232002/timezones.git" target="_blank">Reference - Linux</a></p>
 
-            <li><code>sudo apt update && sudo apt install timezones</code></li>
-            <li><a href="https://github.com/Shoaib232002/timezones.git">Reference - Linux</a></li>
-
-            <li><strong>For macOS:</strong>
-            </li>
-
-            <li><code>brew tap Shoaib232002 && brew install timezones</code></li>
-            <li><a href="https://github.com/Shoaib232002/homebrew-timezones.git">Reference - macOS</a></li>
-        </ul>
+        <h3>macOS Installation</h3>
+        <p>Tap the Timezones repository and install the tool:</p>
+        <pre><code>brew tap Shoaib232002
+brew install timezones</code></pre>
+        <p><a href="https://github.com/Shoaib232002/homebrew-timezones.git" target="_blank">Reference - macOS</a></p>
     </div>
 </body>
 
