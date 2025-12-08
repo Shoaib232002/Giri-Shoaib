@@ -11,28 +11,69 @@
 <body>
     <div class="container">
         <h2>Timezones Command-line Tool Overview</h2>
+
         <p>
-            Timezones is a command-line utility for Linux and macOS that allows users to check the current time in
-            different cities or countries.
+            Timezones is a simple command-line tool for Linux and macOS that lets users quickly check the current
+            date and time in different cities around the world. It also includes a visual mode that displays live,
+            continuously updating time.
         </p>
-        <p> <strong>Command:</strong> timezones [OPTIONS], timezones -vi <br>
-            <strong>Description:</strong>The timezones command prints time date and timezones based on cities timzones.
-            also available with visual mode which displays live time. <br>
-            <strong>Options:</strong> -in Show India time (Asia/Kolkata) -uk Show UK time (Europe/London) -hk Show Hong
-            Kong time -d Show Dubai time -jp Show Japan time -mel Show Melbourne time
+
+        <h3>Description</h3>
+        <p>
+            The <b>timezones</b> command prints the current date, time, and timezone information for selected
+            countries or cities. It supports a live visual mode for real-time updates.
         </p>
+
+        <h3>Command</h3>
+        <pre><code>timezones [OPTIONS]</code></pre>
+        <pre><code>timezones -vi     # Enable visual live-time mode</code></pre>
+
+        <h3>Options</h3>
+
+        <div class="option-block">
+            <p><b>-in</b> — Show India Time (Asia/Kolkata)</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-uk</b> — Show United Kingdom Time (Europe/London)</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-hk</b> — Show Hong Kong Time (Asia/Hong_Kong)</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-d</b> — Show Dubai Time (Asia/Dubai)</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-jp</b> — Show Japan Time (Asia/Tokyo)</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-mel</b> — Show Melbourne Time (Australia/Melbourne)</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-vi</b> — Launch live visual mode with real-time clock updates</p>
+        </div>
+
         <h3>Linux Installation</h3>
-        <p>Add the Timezones repository:</p>
-        <pre><code>echo "deb [trusted=yes] https://Shoaib232002.github.io/timezones-repo /" | sudo tee /etc/apt/sources.list.d/timezones.list</code></pre>
-        <p>Update your package list and install Timezones:</p>
+        <p>Add the Timezones APT repository:</p>
+        <pre><code>echo "deb [trusted=yes] https://Shoaib232002.github.io/timezones /" | sudo tee /etc/apt/sources.list.d/timezones.list</code></pre>
+
+        <p>Update and install Timezones:</p>
         <pre><code>sudo apt update && sudo apt install timezones</code></pre>
-        <p><a href="https://github.com/Shoaib232002/timezones-repo.git" target="_blank">Reference - Linux</a></p>
+
+        <p><a href="https://github.com/Shoaib232002/timezones.git" target="_blank">Reference - Linux</a></p>
 
         <h3>macOS Installation</h3>
-        <p>Tap the Timezones repository and install the tool:</p>
-        <pre><code>brew tap Shoaib232002/timezones-repo
+        <p>Tap the Timezones Homebrew repo and install:</p>
+        <pre><code>brew tap Shoaib232002
 brew install timezones</code></pre>
-        <p><a href="https://github.com/Shoaib232002/homebrew-timezones-repo.git" target="_blank">Reference - macOS</a></p>
+
+        <p><a href="https://github.com/Shoaib232002/homebrew-timezones.git" target="_blank">Reference - macOS</a></p>
+
     </div>
 </body>
 
