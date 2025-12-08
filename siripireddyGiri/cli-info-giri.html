@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Command-line Tool Overview</title>
+    <link rel="stylesheet" href="./cli.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Command-line Tool Overview</h2>
+        <ul>
+            <li>Command-line tool built for Linux and macOS</li>
+            <li>Helps users take timely breaks by reminding them after working for a set duration</li>
+
+            <li><strong>For Linux:</strong>
+                <code>echo "deb [trusted=yes] https://siripireddygiri.github.io/Brainrestall/repo stable main" | sudo tee /etc/apt/sources.list.d/brainrest.list</code>
+            </li>
+
+            <li><code>sudo apt update && sudo apt install brainrest</code></li>
+            <li><a href="https://github.com/SiripireddyGiri/Brainrestall">Reference - Linux</a></li>
+
+            <li><strong>For macOS:</strong>
+                <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code>
+            </li>
+
+            <li><code>brew tap siripireddygiri/brainrest && brew install brainrest</code></li>
+            <li><a href="https://github.com/SiripireddyGiri/homebrew-brainrest">Reference - macOS</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

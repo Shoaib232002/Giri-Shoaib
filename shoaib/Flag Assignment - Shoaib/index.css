@@ -3,13 +3,6 @@
   margin: 0;
   padding: 0;
 }
-:root{
-  --blue:#063581;
-  --red:#D21034;
-  --white:#ffffff;
-  --green:#259543;
-
-}
 body {
   display: flex;
   justify-content: center;
@@ -18,25 +11,25 @@ body {
 }
 /* flag dimensions */
 .flag {
-  height: 38em;
-  width: 60em;
+  height: 37.5em;
+  width: 56.25em;
   margin-top: 1em;
   z-index: -2;
   transition: all 1s ease-in-out;
-  background: linear-gradient(147deg, var(--blue) 39.5%, var(--white) 39.5% 42%, var(--red) 42% 57.5%, var(--white) 57.5% 60%, var(--green) 60% 100%);
+  background: linear-gradient(147deg, #063581 40%, #fff 40% 42%, #D21034 42% 58%, #fff 58% 60%, #259543 60% 100%);
 }
 .sun-circle {
-  height: 6.5em;
-  width: 6.5em;
-  top: 17%;
-  left: 14%;
-  border: solid 0.5em var(--blue);
-  border-radius: 50%;
+  height: 5.5em;
+  width: 5.5em;
+  top: 17.5%;
+  left: 15%;
+  border: solid 0.4em #063581;
+  border-radius: 5em;
   position: relative;
 }
 .sun-ray {
-  height: 13em;
-  width: 13em;
+  height: 12.5em;
+  width: 12.5em;
   top: -65%;
   left: -65%;
   position: absolute;
@@ -55,7 +48,7 @@ body {
   .sun-circle{
     height: 3em;
     width: 3em;
-    border: solid 0.3em var(--blue);
+    border: solid 0.3em #063581;
   }
   .sun-ray{
     height: 6.75em;
@@ -70,27 +63,10 @@ body {
   .sun-circle{
     height: 1.25em;
     width: 1.25em;
-    border: solid 0.15em var(--blue);
+    border: solid 0.15em #063581;
   }
   .sun-ray{
     height: 2.65em;
     width: 2.65em;
-  }
-}
-@media (min-width:1200px) {
-  .flag{
-    height: 880px;
-    width: 1320px;
-  }
-  .sun-circle{
-    height: 9.5em;
-    width: 9.5em;
-    border: solid 0.7em var(--blue);
-  }
-  .sun-ray{
-    height: 20em;
-    width: 20em;
-    top:-55%;
-    left:-55%;
   }
 }
