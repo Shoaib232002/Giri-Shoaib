@@ -12,23 +12,75 @@
     <div class="container">
         <h2>Brainrest Command-line Tool Overview</h2>
         <p>
-            Brainrest is a command-line utility designed for Linux and macOS users. It helps you take timely breaks by
-            reminding you after working for a set duration.
+            Brainrest is a terminal-based micro-break reminder tool that helps prevent eye strain and promote healthy
+            work habits. It notifies you after a chosen interval and locks your terminal for a short 2-minute break using
+            a clean visual countdown interface.
         </p>
+
+        <h3>Description</h3>
+        <p>
+            <b>brainrest</b> is a terminal-based break reminder tool that enforces regular micro-breaks.
+            When a break begins, it locks your terminal for 2 minutes with a visual countdown,
+            blocking commands and encouraging you to rest.
+        </p>
+        <p>
+            The tool includes a centered TUI mode with mouse/keyboard support, real-time countdowns, and an adaptive
+            bordered interface.
+        </p>
+
+        <h3>Options</h3>
+
+        <div class="option-block">
+            <p><b>-s, --set MINUTES</b></p>
+            <p>Set the break interval (default 40 minutes). The value is saved across sessions.</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-r, --reset</b></p>
+            <p>Reset the break timer to 40 minutes and clear history.</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-V, --visual</b></p>
+            <p>Launch interactive visual TUI mode with countdowns, color indicators, start/stop controls, configuration,
+                and navigation support:
+            </p>
+            <ul>
+                <li>Arrow keys ↑/↓ or j/k</li>
+                <li>Number keys 1–4</li>
+                <li>Mouse clicks</li>
+                <li>ENTER/SPACE to select</li>
+                <li>ESC or ‘q’ to exit</li>
+            </ul>
+        </div>
+
+        <div class="option-block">
+            <p><b>-v, --version</b></p>
+            <p>Show version and OS information.</p>
+        </div>
+
+        <div class="option-block">
+            <p><b>-h, --help</b></p>
+            <p>Display the help message with available commands.</p>
+        </div>
 
         <h3>Linux Installation</h3>
         <p>Add the Brainrest repository:</p>
         <pre><code>echo "deb [trusted=yes] https://siripireddygiri.github.io/Brainrestall/repo stable main" | sudo tee /etc/apt/sources.list.d/brainrest.list</code></pre>
-        <p>Update your package list and install Brainrest:</p>
+
+        <p>Update and install:</p>
         <pre><code>sudo apt update && sudo apt install brainrest</code></pre>
+
         <p><a href="https://github.com/SiripireddyGiri/Brainrestall" target="_blank">Reference - Linux</a></p>
 
         <h3>macOS Installation</h3>
-        <p>Install Homebrew if it is not already installed:</p>
+        <p>Install Homebrew if needed:</p>
         <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
-        <p>Tap the Brainrest repository and install the tool:</p>
+
+        <p>Tap the Brainrest repository and install:</p>
         <pre><code>brew tap siripireddygiri/brainrest
 brew install brainrest</code></pre>
+
         <p><a href="https://github.com/SiripireddyGiri/homebrew-brainrest" target="_blank">Reference - macOS</a></p>
     </div>
 </body>
