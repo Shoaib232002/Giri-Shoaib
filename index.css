@@ -8,12 +8,10 @@
     --lite-text:#ffffff;
     --dark:#000000;
     --background-color:#5050f4;
-    --hover-color:#ff0000;
 }
 nav{
     display: flex;
-    justify-content: center;
-    align-items: center;;
+    align-items: center;
     background-color: var(--background-color);
     color: var(--lite-text);
     padding: 1rem;
@@ -32,8 +30,9 @@ nav{
     margin-top: 4em;
 }
 h1{
-    text-align: center;
     color: var(--dark);
+    text-align: center;
+    margin: 1em;
 }
 a, li{
     text-decoration: none;
@@ -67,7 +66,7 @@ footer{
     width: 100%;
 }
 h2{
-    margin-left: 1em;
+    margin-left: 0.5em ;
     color: var(--background-color);
 }
 .card{
@@ -109,15 +108,16 @@ h2{
     box-shadow: 1px 1px 10px var(--dark);
 }
 .project-card img {
-    width: 100%;
+    width: 380px;
     height: 200px;
-    object-fit: contain;
+    margin: 10px;
+    background-size: cover;
+    border-radius: 25px;
     display: block;
-    padding: 10px;
-    border-radius: 15px;
+    border: solid 2px rgb(243, 240, 240);
 }
 .card-content {
-    padding: 1.5em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
 }
