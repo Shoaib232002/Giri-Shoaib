@@ -12,21 +12,16 @@
 }
 nav{
     display: flex;
-    font-size: 1.25em;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;;
     background-color: var(--background-color);
     color: var(--lite-text);
-    padding: 1.25rem;
-}
-.nav-logo {
-    display: flex;
-    align-items: center;
+    padding: 1rem;
 }
 .nav-logo img {
-    height: 2em;
-    width: 7em;;
-    object-fit: contain;
+    height: 3em;
+    width: 12em;
+    object-fit: cover;
 }
 .profile{
     margin: 1rem;
