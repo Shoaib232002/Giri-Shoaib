@@ -7,7 +7,7 @@
 :root{
     --lite-text:#ffffff;
     --dark:#000000;
-    --background-color:#5050f4;
+    --background-color:#500fff;;
 }
 nav{
     display: flex;
@@ -98,8 +98,7 @@ h2{
     width: 25em;
     max-width: 30em;
     box-shadow: 1px 1px 3px var(--background-color);
-    border-radius: 1.5em;
-    overflow: hidden;
+    border-radius: 1em;
     transition: all 0.3s ease-in-out;
 }
 .project-card:hover {
@@ -111,9 +110,9 @@ h2{
     height: 13em;
     margin: 8px;
     background-size: cover;
-    border-radius: 25px;
-    display: block;
-    border: solid 2px rgb(243, 240, 240);
+    border-radius: 1em;
+    display: flex;
+    border: solid 2px #f3f0f0;
 }
 .card-content {
     padding: 0.5em;
@@ -124,6 +123,36 @@ h2{
     padding: 1em;
     margin: 0.25em 0;
     box-shadow: none;
+}
+.oneline{
+    display:flex;
+    justify-content: start;
+    align-items: end;
+    ;
+}
+.html-icon{
+    background-image: url("/pictures/html.png");
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    padding: 10px;
+}
+.css-icon{
+    background-image: url("/pictures/css.png");
+    height: 50px;
+    width: 35px;
+    background-size: cover;
+    padding: 5px;
+
+
+}
+.js-icon{
+    background-image: url("/pictures/javascript.png");
+    height: 50px;
+    width: 45px;
+    background-size: cover;
+    padding: 10px;
+
 }
 @media (max-width:480px){
     .card-giri , .card-shoaib{
@@ -148,5 +177,8 @@ h2{
     .details {
         gap: 1em;
         padding: 1em;
+    }
+    .project-card img{
+        width: 22.5em;
     }
 }
