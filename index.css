@@ -166,7 +166,6 @@ h2{
     width: 38px;
     background-size: contain;
     position: relative;
-    left: 80%;
 }
 @media (max-width:480px){
     .card-giri , .card-shoaib{
