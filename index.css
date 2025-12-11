@@ -7,7 +7,8 @@
 :root{
     --lite-text:#ffffff;
     --dark:#000000;
-    --background-color:#500fff;;
+    --background-color:#500fff;
+    --border:#f3f0f0;
 }
 nav{
     display: flex;
@@ -61,11 +62,11 @@ a, li{
 footer{
     display: flex;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
     align-items: center;
     background-color: var(--background-color);
     color: var(--lite-text);
-    padding:2em;
+    padding:1.5em;
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -118,7 +119,7 @@ h2{
     background-size: cover;
     border-radius: 1em;
     display: flex;
-    border: solid 2px #f3f0f0;
+    border: solid 2px var(--border);
 }
 .card-content {
     padding: 0.5em;
@@ -158,7 +159,14 @@ h2{
     width: 45px;
     background-size: cover;
     padding: 10px;
-
+}
+.linux-icon{
+    background-image: url("./pictures/linux.png");
+    height: 45px;
+    width: 38px;
+    background-size: contain;
+    position: relative;
+    left: 80%;
 }
 @media (max-width:480px){
     .card-giri , .card-shoaib{
