@@ -53,9 +53,15 @@ a, li{
     object-fit: cover;
     border-radius: 1em;
 }
+
+.card-giri, .card-shoaib
+{
+    font-size: 1.1em;
+}
 footer{
     display: flex;
     justify-content: center;
+    font-size: 1.5em;
     align-items: center;
     background-color: var(--background-color);
     color: var(--lite-text);
