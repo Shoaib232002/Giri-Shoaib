@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family:monorope;
+    font-family:'Open Sans';
 }
 :root{
     --lite-text:#ffffff;
@@ -81,6 +81,11 @@ h2{
     border-radius: 1.5em;  
     line-height: 2em; 
 }
+
+.card p{
+    text-align: justify;
+    font-size: 1.1rem;
+}
 .card:hover{
     transform: translateY(-2px);
     transition: all 0.3s ease-in-out;
@@ -122,7 +127,6 @@ h2{
     border: solid 2px var(--border);
 }
 .card-content {
-    padding: 0.5em;
     display: flex;
     flex-direction: column;
 }
@@ -131,34 +135,30 @@ h2{
     margin: 0.25em 0;
     box-shadow: none;
 }
-.oneline{
-    display:flex;
-    justify-content: start;
-    align-items: end;
-    ;
+.oneline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
 }
 .html-icon{
     background-image: url("./pictures/html.png");
     height: 50px;
     width: 50px;
     background-size: cover;
-    padding: 10px;
 }
 .css-icon{
     background-image: url("./pictures/css.png");
     height: 50px;
     width: 35px;
     background-size: cover;
-    padding: 5px;
-
-
 }
 .js-icon{
     background-image: url("./pictures/javascript.png");
     height: 50px;
     width: 45px;
     background-size: cover;
-    padding: 10px;
 }
 .linux-icon{
     background-image: url("./pictures/linux.png");
@@ -166,6 +166,27 @@ h2{
     width: 38px;
     background-size: contain;
     position: relative;
+}
+a button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--background-color);
+    color: var(--lite-text);
+    border: none;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.8em;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+a button:hover {
+    background-color: var(--dark);
+    transform: translateY(-2px);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 @media (max-width:480px){
     .card-giri , .card-shoaib{
