@@ -151,6 +151,7 @@ footer{
 }
 
 .card p{
+    margin-top: 1em;
     text-align: justify;
     font-size: 1.1rem;
 }
@@ -207,29 +208,17 @@ footer{
 
 .top-btn{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--background-color);
-    color: var(--lite-text);
-    padding: 0.75em 1.5em;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 0.8em;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
-    transition: all 0.3s ease-in-out;
-    height: 5%;
-    width: 4%;
+    right: 1.5em;
+    bottom: 1.5em;
+    z-index: 1000;
 }
 
-.top-btn:hover{
-    transform: translateY(-2px);
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+.top-btn img{
+    height: 3em;
+    width: 3em;
 }
 
 @media (max-width: 768px){
-    .nav-logo img{
-        width: 12em;
-    }
 
     .profile{
         gap: 2rem;
