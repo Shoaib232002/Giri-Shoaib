@@ -127,11 +127,12 @@ footer{
 }
 
 .project-card > img{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-bottom: 2px solid var(--border);
-    background-color: #f5f5f5;
+    width: calc(100% - 1em);
+    height: 250px;
+    object-fit: cover;
+    background-color: #f5f5f5b3;
+    border-radius: 1em;
+    margin: 0.5em;
 }
 
 .card-content{
@@ -234,7 +235,7 @@ footer{
     }
 
     .project-card > img{
-        height: 11em;
+        height: 200px;
     }
 }
 
@@ -251,7 +252,7 @@ footer{
     }
 
     .project-card > img{
-        height: 10em;
+        height: 180px;
     }
 
     .card p{
@@ -296,7 +297,7 @@ footer{
     }
 
     .project-card > img {
-        height: auto; 
+        height: 250px;
     }
 
     .card p {
