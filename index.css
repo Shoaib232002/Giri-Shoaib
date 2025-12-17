@@ -219,7 +219,22 @@ footer {
     height: 3em;
     width: 3em;
 }
-
+.internship-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.intern-project-button{
+    padding: 1em;
+    border-radius: 20px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    font-size: large;
+    gap: 0.5em;
+}
 @media (max-width: 768px) {
 
     .profile {
@@ -274,7 +289,9 @@ footer {
     .card-shoaib {
         padding: 0.5em;
     }
-
+    .intern-project-button{
+        font-size: small;
+    }
     .card {
         border-radius: 25px;
     }
