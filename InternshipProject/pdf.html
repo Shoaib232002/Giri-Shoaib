@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Animation-Arcade – Automated Frontend Workflow</title>
+  <link rel="stylesheet" href="pdf.css" />
+</head>
+<body>
+
+  <header class="title-section">
+    <h1>Animation-Arcade</h1>
+    <p class="subtitle">Fully Automated Frontend Development Workflow</p>
+  </header>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      Animation-Arcade is a frontend project built to demonstrate how a modern,
+      production-ready frontend workflow works in real-world teams.
+    </p>
+    <p>
+      The focus of this project is not only UI or animations, but automation —
+      ensuring code quality, consistency, and reliability from development
+      to deployment.
+    </p>
+    <p>
+      Every tool in this project is designed to catch mistakes early, reduce
+      manual effort, and give every developer the same predictable environment.
+    </p>
+  </section>
+
+  <section>
+    <h2>Automation Goals</h2>
+    <ul>
+      <li>Enforce JavaScript and CSS code quality</li>
+      <li>Automatically run tests on file changes</li>
+      <li>Block bad commits using Git hooks</li>
+      <li>Enforce clean and meaningful commit messages</li>
+      <li>Ensure CI checks match local checks</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Step 1: Environment Consistency (Node.js)</h2>
+    <p>
+      Use NVM and lock the Node.js version across the entire project.
+    </p>
+
+    <h3>Implementation</h3>
+    <pre>
+.nvmrc
+24.11.1
+    </pre>
+
+    <h3>Result</h3>
+    <p>
+      Local development, Git hooks, and GitHub Actions all use the same Node version.
+    </p>
+  </section>
+
+  <section>
+    <h2>Step 2: Project Scripts & Tooling</h2>
+    <p>
+      All automation starts from <code>package.json</code>.
+      Developers interact with the workflow using simple npm commands.
+    </p>
+
+    <h3>Key Scripts</h3>
+    <pre>
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests",
+    "test:watch": "nodemon --watch js --watch __tests__ --ext js --exec \"npm test\"",
+    "prepare": "husky"
+  }
+}
+    </pre>
+
+    <p>
+      These scripts ensure linting, testing, and Git hooks work consistently
+      for every developer.
+    </p>
+  </section>
+
+  <section>
+    <h2>Step 3: JavaScript Linting (ESLint)</h2>
+    <p>
+      ESLint is used to catch bugs early and enforce modern JavaScript best practices.
+    </p>
+
+    <h3>ESLint Configuration (Flat Config)</h3>
+    <pre>
+import js from "@eslint/js";
+import globals from "globals";
+
+export default [
+  js.configs.recommended,
+  {
+    languageOptions: {
+      globals: globals.browser
+    },
+    rules: {
+      "no-var": "error",
+      "prefer-const": "error",
+      "eqeqeq": ["error", "always"],
+      "no-debugger": "error",
+      "no-console": "warn"
+    }
+  }
+];
+    </pre>
+  </section>
+
+  <section>
+    <h2>Step 4: CSS Linting (Stylelint)</h2>
+    <p>
+      Stylelint ensures CSS remains valid, consistent, and easy to maintain.
+    </p>
+
+
+    <h3>Stylelint Configuration</h3>
+    <pre>
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "max-nesting-depth": 3,
+    "selector-max-id": 0,
+    "no-duplicate-selectors": true
+  }
+}
+    </pre>
+  </section>
+
+  <section>
+    <h2>Step 5: Unit Testing (Jest)</h2>
+    <p>
+      Jest is used to validate JavaScript logic automatically.
+      Tests run locally, during commits, and again in CI.
+    </p>
+
+    <h3>Sample Function & Test</h3>
+    <pre>
+export function add(a, b) {
+  return a + b;
+}
+
+test("adds two numbers", () => {
+  expect(add(2, 3)).toBe(5);
+});
+    </pre>
+
+    <p>
+      This ensures broken logic never reaches the main branch.
+    </p>
+  </section>
+
+  <section>
+    <h2>Step 6: Commit Message Enforcement</h2>
+    <p>
+      Commitlint enforces the Conventional Commits standard
+      to maintain a clean and readable Git history.
+    </p>
+
+    <pre>
+❌ wrong message
+✅ feat(animation): add bounce effect
+    </pre>
+  </section>
+
+  <section>
+    <h2>Step 7: Pre-Commit Automation (Husky)</h2>
+    <p>
+      Husky runs automated checks before every commit.
+      If any check fails, the commit is blocked.
+    </p>
+
+    <h3>Pre-Commit Hook</h3>
+    <pre>
+npx eslint .
+npx stylelint "**/*.css"
+npm test
+    </pre>
+  </section>
+
+  <section>
+    <h2>Step 8: Editor Automation (VS Code)</h2>
+    <p>
+      VS Code is configured to integrate ESLint, Stylelint, and Jest
+      without forcing automatic formatting.
+    </p>
+
+    <p>
+      Developers stay in control while still benefiting from automation.
+    </p>
+  </section>
+
+  <section>
+    <h2>Step 9: Continuous Integration (GitHub Actions)</h2>
+    <p>
+      GitHub Actions runs the same checks as local development,
+      ensuring consistency across environments.
+    </p>
+
+    <h3>CI Workflow</h3>
+    <pre>
+name: Lint & Test
+
+on: [push, pull_request]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+      - run: npm ci
+      - run: npm test
+    </pre>
+
+    <p>
+      Pull requests cannot be merged unless all checks pass.
+    </p>
+  </section>
+
+  <!-- FLOW -->
+  <section>
+    <h2>End-to-End Automation Flow</h2>
+    <pre>
+Edit file
+↓
+Save → Editor checks
+↓
+Commit → Husky → Lint → Test → Commitlint
+↓
+Push → GitHub Actions → Lint → Test
+    </pre>
+  </section>
+
+  <footer>
+    <p><strong>Author:</strong> Siripireddy Giri & Mohammed Shoaib</p>
+  </footer>
+
+</body>
+</html>
