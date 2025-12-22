@@ -16,11 +16,14 @@
 
       <ul class="nav-links">
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#analysis">Plan & Analysis</a></li>
-        <li><a href="#wireframes">Wireframes</a></li>
-        <li><a href="#tech-stack">Tech Stack</a></li>
-        <li><a href="#setup">Setup</a></li>
-        <li><a href="#code-quality">Code Quality</a></li>
+        <li><a href="#consistency">Consistency</a></li>
+        <li><a href="#tools">Scripts</a></li>
+        <li><a href="#eslinting">ESLint</a></li>
+        <li><a href="#stylelint">Stylelint</a></li>
+        <li><a href="#testing">Jest</a></li>
+        <li><a href="#commitlint">Commitlint</a></li>
+        <li><a href="#husky">Husky</a></li>
+        <li><a href="#githubactions">GitHub Actions</a></li>
       </ul>
     </nav>
   </header>
@@ -50,7 +53,7 @@
   </section>
 
   <section>
-    <h2>Step 1: Environment Consistency (Node.js)</h2>
+    <h2 id="consistency">Step 1: Environment Consistency (Node.js)</h2>
     <p>
       Use NVM and lock the Node.js version across the entire project.
     </p>
@@ -68,7 +71,7 @@
   </section>
 
   <section>
-    <h2>Step 2: Project Scripts & Tooling</h2>
+    <h2 id="tools">Step 2: Project Scripts & Tooling</h2>
     <p>
       All automation starts from <code>package.json</code>.
       Developers interact with the workflow using simple npm commands.
@@ -94,7 +97,7 @@
   </section>
 
   <section>
-    <h2>Step 3: JavaScript Linting (ESLint)</h2>
+    <h2 id="eslinting">Step 3: JavaScript Linting (ESLint)</h2>
     <p>
       ESLint is used to catch bugs early and enforce modern JavaScript best practices.
     </p>
@@ -123,7 +126,7 @@ export default [
   </section>
 
   <section>
-    <h2>Step 4: CSS Linting (Stylelint)</h2>
+    <h2 id="stylelint">Step 4: CSS Linting (Stylelint)</h2>
     <p>
       Stylelint ensures CSS remains valid, consistent, and easy to maintain.
     </p>
@@ -145,7 +148,7 @@ export default [
   </section>
 
   <section>
-    <h2>Step 5: Unit Testing (Jest)</h2>
+    <h2 id="testing">Step 5: Unit Testing (Jest)</h2>
     <p>
       Jest is used to validate JavaScript logic automatically.
       Tests run locally, during commits, and again in CI.
@@ -168,7 +171,7 @@ test("adds two numbers", () => {
   </section>
 
   <section>
-    <h2>Step 6: Commit Message Enforcement</h2>
+    <h2 id="commitlint">Step 6: Commit Message Enforcement</h2>
     <p>
       Commitlint enforces the Conventional Commits standard
       to maintain a clean and readable Git history.
@@ -181,7 +184,7 @@ test("adds two numbers", () => {
   </section>
 
   <section>
-    <h2>Step 7: Pre-Commit Automation (Husky)</h2>
+    <h2 id="husky">Step 7: Pre-Commit Automation (Husky)</h2>
     <p>
       Husky runs automated checks before every commit.
       If any check fails, the commit is blocked.
@@ -196,19 +199,7 @@ npm test
   </section>
 
   <section>
-    <h2>Step 8: Editor Automation (VS Code)</h2>
-    <p>
-      VS Code is configured to integrate ESLint, Stylelint, and Jest
-      without forcing automatic formatting.
-    </p>
-
-    <p>
-      Developers stay in control while still benefiting from automation.
-    </p>
-  </section>
-
-  <section>
-    <h2>Step 9: Continuous Integration (GitHub Actions)</h2>
+    <h2 id="githubactions">Step 8: Continuous Integration (GitHub Actions)</h2>
     <p>
       GitHub Actions runs the same checks as local development,
       ensuring consistency across environments.

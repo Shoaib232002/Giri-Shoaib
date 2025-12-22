@@ -74,36 +74,110 @@
     </section>
     <section id="wireframes">
       <h2>Wireframes</h2>
-      
-    </section>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="./pictures/Landing.png" alt="Landing Page" class="gallery-img" />
+          <p class="gallery-caption">Landing Page</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./pictures/Gameborad.png" alt="Game Board" class="gallery-img" />
+          <p class="gallery-caption">Game Board</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./pictures/signin.png" alt="signin" class="gallery-img" />
+          <p class="gallery-caption">Sign in</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./pictures/Login.png" alt="Login" class="gallery-img" />
+          <p class="gallery-caption">Login</p>
+        </div>
+        <div class="gallery-item">
+          <img src="./pictures/levels.png" alt="Levels" class="gallery-img" />
+          <p class="gallery-caption">Levels</p>
+        </div>
+      </div>
 
+      <div id="imageModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img class="modal-img" id="modalImage" src="" alt="Zoomed Image" />
+          <p class="modal-caption" id="modalCaption"></p>
+          <div class="modal-nav">
+            <button id="prevBtn" class="nav-btn">&larr; Previous</button>
+            <button id="nextBtn" class="nav-btn">Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="tech-stack">
       <h2>Technology Stack</h2>
-      <dl>
-        <dt>JavaScript (ES6+)</dt>
-        <dd>Core animation logic</dd>
-        <dt>CSS</dt>
-        <dd>Responsive styling</dd>
-        <dt>Node.js (v24.11.1)</dt>
-        <dd>Runtime environment</dd>
-        <dt>ESLint & Stylelint</dt>
-        <dd>Code quality and consistency</dd>
-        <dt>Husky & Commitlint</dt>
-        <dd>Automated pre-commit checks</dd>
-        <dt>Jest</dt>
-        <dd>Unit testing framework</dd>
-        <dt>GitHub Actions</dt>
-        <dd>Continuous integration</dd>
-      </dl>
+      <div class="tech-stack-container">
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="../pictures/javascript.png" alt="JavaScript" title="JavaScript" />
+          </div>
+          <h3>JavaScript</h3>
+          <p>Core animation logic</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="../pictures/Css.svg" alt="CSS" title="CSS" />
+          </div>
+          <h3>CSS</h3>
+          <p>Responsive styling</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="./Icon/nodejsDark.svg" alt="Node.js" title="Node" />
+          </div>
+          <h3>Node.js</h3>
+          <p>Runtime environment</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="./Icon/eslint.svg" alt="ESLint" title="ESLint" />
+          </div>
+          <h3>ESLint</h3>
+          <p>Code quality and linting</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="./Icon/stylelint.svg" alt="Stylelint" title="Stylelint" />
+          </div>
+          <h3>Stylelint</h3>
+          <p>CSS conventions</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="./Icon/husky.png" alt="Husky" title="Husky" />
+          </div>
+          <h3>Husky</h3>
+          <p>Pre-commit hooks</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="./Icon/Jest.svg" alt="Jest" title="Jest" />
+          </div>
+          <h3>Jest</h3>
+          <p>Unit testing framework</p>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon">
+            <img src="./Icon/githubactions.svg" alt="GitHub Actions" title="GitHub Actions" />
+          </div>
+          <h3>GitHub Actions</h3>
+          <p>Continuous integration</p>
+        </div>
+      </div>
     </section>
 
     <section id="setup">
       <h2>Project Setup</h2>
       <ol>
-        <li>Clone repository: <code>git clone &lt;repo-url&gt;</code></li>
-        <li>Enter folder: <code>cd Animation-Arcade</code></li>
-        <li>Install dependencies: <code>npm install</code></li>
-        <li>Use Node version: <code>nvm use</code></li>
+        <li>Clone repository: <br><code>git clone &lt;repo-url&gt;</code></li>
+        <li>Enter folder: <br><code>cd Animation-Arcade</code></li>
+        <li>Install dependencies: <br><code>npm install</code></li>
+        <li>Use Node version: <br><code>nvm use</code></li>
         <li>
           <a href="./pdf.html">Automated Environment Setup</a>
         </li>
