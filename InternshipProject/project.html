@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Animation-Arcade project documentation with automated linting, testing, and CI setup.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Animation-Arcade project documentation with automated linting, testing, and CI setup."
+  />
   <title>Animation-Arcade - Project Documentation</title>
-  <link rel="stylesheet" href="./project.css">
+  <link rel="stylesheet" href="./project.css" />
 </head>
 <body>
-  <header>
-    <h1>Animation-Arcade</h1>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="../index.html"><img src="../pictures/logo.png" alt="Bootcamp Logo" /></a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#analysis">Plan & Analysis</a></li>
+        <li><a href="#wireframes">Wireframes</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#code-quality">Code Quality</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav aria-label="Main navigation">
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#analysis">Plan and Analysis</a></li>
-      <li><a href="#wireframes">Wireframes</a></li>
-      <li><a href="#tech-stack">Tech Stack</a></li>
-      <li><a href="#setup">Setup</a></li>
-      <li><a href="#code-quality">Code Quality</a></li>
-      <li><a href="./pdf.html">Automatic Environmental Setup</a></li>
-    </ul>
-  </nav>
-
-  <main>
+  <main class="container">
     <section id="overview">
       <h2>Project Overview</h2>
       <p>
@@ -44,28 +48,35 @@
 
     <section id="analysis">
       <h2>Project Plan and Analysis</h2>
-      <p>The primary objective of the Animation Arcade project is to address the gap in interactive learning platforms focused specifically on CSS animations and transforms. While several web-based games exist for learning CSS layout concepts—such as Flexbox Froggy and Grid Garden—there is a noticeable lack of dedicated, game-based tools that teach animation principles through hands-on coding challenges.</p><br>
-      <p>Initial research and analysis involved exploring existing educational platforms and interactive games available on the web. This investigation revealed that most tools focus on static layout systems (Flexbox, Grid) or general CSS properties, but do not provide a structured, level-based learning experience for CSS animations. As animations are a crucial part of modern web development, this gap presents a strong opportunity for innovation.</p><br>
-      <p>To better understand effective learning patterns and technical implementation strategies, similar projects such as Flexbox Froggy and Grid Garden were analyzed, including their publicly available GitHub repositories.</p><br>
-      <p><strong>These projects provided insights into:</strong></p>
+
+      <p>
+        The primary objective of the Animation Arcade project is to address the gap
+        in interactive learning platforms focused specifically on CSS animations and transforms.
+      </p>
+
+      <p>
+        Research revealed that most existing platforms focus on static layout systems
+        and lack structured, level-based animation learning experiences.
+      </p>
+
+      <p><strong>Insights gathered include:</strong></p>
       <ul>
         <li>Level-based progression systems</li>
-        <li>Real-time code validation mechanisms</li>
-        <li>User-friendly interfaces for writing and testing CSS</li>
-        <li>Gamification techniques to improve engagement and retention</li>
+        <li>Real-time code validation</li>
+        <li>User-friendly coding interfaces</li>
+        <li>Gamification for engagement</li>
       </ul>
-      <p>Based on this analysis, Animation Arcade is designed as an interactive game where users learn CSS animations by completing small, incremental tasks. Each level presents a specific animation challenge, and users write CSS code within an embedded code editor. The entered code is validated against predefined logic or expected output on the backend. Upon successful validation, the corresponding animation is triggered, visually demonstrating the effect of the user’s code and marking the level as completed</p><br>
-      <p><strong>This approach ensures:</strong></p>
-      <ul>
-        <li>Active learning through hands-on coding</li>
-        <li>Progressive difficulty, allowing users to build confidence step by step</li>
-      </ul>
-      <p>Overall, the project analysis confirms both the technical feasibility and educational value of Animation Arcade, positioning it as a unique and impactful learning tool for developers aiming to master CSS animations in an engaging and practical manner.</p>
+
+      <p>
+        Animation Arcade uses incremental challenges where users write CSS animations,
+        validated in real-time, reinforcing learning through visual feedback.
+      </p>
     </section>
     <section id="wireframes">
-      <h2 id="wireframes">Wireframes</h2>
-      <img class="wireframes" src="../pictures/wireframes.png" alt="wireframes">
-</section>
+      <h2>Wireframes</h2>
+      
+    </section>
+
     <section id="tech-stack">
       <h2>Technology Stack</h2>
       <dl>
@@ -82,7 +93,7 @@
         <dt>Jest</dt>
         <dd>Unit testing framework</dd>
         <dt>GitHub Actions</dt>
-        <dd>Continuous integration workflow</dd>
+        <dd>Continuous integration</dd>
       </dl>
     </section>
 
@@ -92,24 +103,30 @@
         <li>Clone repository: <code>git clone &lt;repo-url&gt;</code></li>
         <li>Enter folder: <code>cd Animation-Arcade</code></li>
         <li>Install dependencies: <code>npm install</code></li>
-        <li>Use correct Node version: <code>nvm use</code></li>
+        <li>Use Node version: <code>nvm use</code></li>
+        <li>
+          <a href="./pdf.html">Automated Environment Setup</a>
+        </li>
       </ol>
     </section>
 
     <section id="code-quality">
       <h2>Code Quality Automation</h2>
       <ul>
-        <li><strong>ESLint:</strong> JavaScript linting rules</li>
-        <li><strong>Stylelint:</strong> CSS linting and conventions</li>
-        <li><strong>Husky:</strong> Pre-commit hooks for linting and tests</li>
-        <li><strong>Commitlint:</strong> Enforces Conventional Commits</li>
+        <li><strong>ESLint:</strong> JavaScript linting</li>
+        <li><strong>Stylelint:</strong> CSS conventions</li>
+        <li><strong>Husky:</strong> Pre-commit hooks</li>
+        <li><strong>Commitlint:</strong> Conventional commits</li>
       </ul>
     </section>
-          <a href="#" class="top-btn"><img src="../pictures/top.png" alt="Top Icon"></a>
+
+    <a href="#" class="top-btn">
+      <img src="../pictures/top.png" alt="Scroll to top" />
+    </a>
   </main>
 
-  <footer>
-    <p>© 2025 Animation-Arcade Project</p>
+  <footer class="site-footer">
+    <p>&copy; 2025 Animation-Arcade Project</p>
   </footer>
 </body>
 </html>
