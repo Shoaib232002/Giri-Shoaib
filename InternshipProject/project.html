@@ -73,101 +73,101 @@
     </section>
     <section id="wireframes">
       <h2>Wireframes</h2>
-      <div class="gallery-container">
-        <div class="gallery-item">
-          <img src="./pictures/Landing.png" alt="Landing Page" class="gallery-img" />
-          <p class="gallery-caption">Landing Page</p>
-        </div>
-        <div class="gallery-item">
-          <img src="./pictures/Gameborad.png" alt="Game Board" class="gallery-img" />
-          <p class="gallery-caption">Game Board</p>
-        </div>
-        <div class="gallery-item">
-          <img src="./pictures/signin.png" alt="signin" class="gallery-img" />
-          <p class="gallery-caption">Sign in</p>
-        </div>
-        <div class="gallery-item">
-          <img src="./pictures/Login.png" alt="Login" class="gallery-img" />
-          <p class="gallery-caption">Login</p>
-        </div>
-        <div class="gallery-item">
-          <img src="./pictures/levels.png" alt="Levels" class="gallery-img" />
-          <p class="gallery-caption">Levels</p>
-        </div>
-      </div>
 
-      <div id="imageModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <img class="modal-img" id="modalImage" src="" alt="Zoomed Image" />
-          <p class="modal-caption" id="modalCaption"></p>
-          <div class="modal-nav">
-            <button id="prevBtn" class="nav-btn">&larr; Previous</button>
-            <button id="nextBtn" class="nav-btn">Next &rarr;</button>
-          </div>
+      <div class="carousel">
+        <button class="carousel-btn prev" aria-label="Previous">
+          &#10094;
+        </button>
+
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide">
+              <img src="./pictures/Landing.png" alt="Landing Page" />
+              <p>Landing Page</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="./pictures/Gameborad.png" alt="Game Board" />
+              <p>Game Board</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="./pictures/signin.png" alt="Sign in" />
+              <p>Sign In</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="./pictures/Login.png" alt="Login" />
+              <p>Login</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="./pictures/levels.png" alt="Levels" />
+              <p>Levels</p>
+            </li>
+          </ul>
         </div>
+
+        <button class="carousel-btn next" aria-label="Next">
+          &#10095;
+        </button>
       </div>
     </section>
-    <section id="tech-stack">
-      <h2>Technology Stack</h2>
-      <div class="tech-stack-container">
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="../pictures/javascript.png" alt="JavaScript" title="JavaScript" />
-          </div>
-          <h3>JavaScript</h3>
-          <p>Core animation logic</p>
+    <h2>Technology Stack</h2>
+    <div class="tech-stack-container">
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="../pictures/javascript.png" alt="JavaScript" title="JavaScript" />
         </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="../pictures/Css.svg" alt="CSS" title="CSS" />
-          </div>
-          <h3>CSS</h3>
-          <p>Responsive styling</p>
-        </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="./Icon/nodejsDark.svg" alt="Node.js" title="Node" />
-          </div>
-          <h3>Node.js</h3>
-          <p>Runtime environment</p>
-        </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="./Icon/eslint.svg" alt="ESLint" title="ESLint" />
-          </div>
-          <h3>ESLint</h3>
-          <p>Code quality and linting</p>
-        </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="./Icon/stylelint.svg" alt="Stylelint" title="Stylelint" />
-          </div>
-          <h3>Stylelint</h3>
-          <p>CSS conventions</p>
-        </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="./Icon/husky.png" alt="Husky" title="Husky" />
-          </div>
-          <h3>Husky</h3>
-          <p>Pre-commit hooks</p>
-        </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="./Icon/Jest.svg" alt="Jest" title="Jest" />
-          </div>
-          <h3>Jest</h3>
-          <p>Unit testing framework</p>
-        </div>
-        <div class="tech-item">
-          <div class="tech-icon">
-            <img src="./Icon/githubactions.svg" alt="GitHub Actions" title="GitHub Actions" />
-          </div>
-          <h3>GitHub Actions</h3>
-          <p>Continuous integration</p>
-        </div>
+        <h3>JavaScript</h3>
+        <p>Core animation logic</p>
       </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="../pictures/Css.svg" alt="CSS" title="CSS" />
+        </div>
+        <h3>CSS</h3>
+        <p>Responsive styling</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="./Icon/nodejsDark.svg" alt="Node.js" title="Node" />
+        </div>
+        <h3>Node.js</h3>
+        <p>Runtime environment</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="./Icon/eslint.svg" alt="ESLint" title="ESLint" />
+        </div>
+        <h3>ESLint</h3>
+        <p>Code quality and linting</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="./Icon/stylelint.svg" alt="Stylelint" title="Stylelint" />
+        </div>
+        <h3>Stylelint</h3>
+        <p>CSS conventions</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="./Icon/husky.png" alt="Husky" title="Husky" />
+        </div>
+        <h3>Husky</h3>
+        <p>Pre-commit hooks</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="./Icon/Jest.svg" alt="Jest" title="Jest" />
+        </div>
+        <h3>Jest</h3>
+        <p>Unit testing framework</p>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon">
+          <img src="./Icon/githubactions.svg" alt="GitHub Actions" title="GitHub Actions" />
+        </div>
+        <h3>GitHub Actions</h3>
+        <p>Continuous integration</p>
+      </div>
+    </div>
     </section>
 
     <section id="setup">
@@ -179,21 +179,22 @@
       </p>
 
       <ol>
-          <strong>Step 1: Clone the project repository to your local machine using Git</strong><br />
-          <code>git clone &lt;repo-url&gt;</code>
-          <br>
-          <strong>Step 2: Navigate to the project directory</strong><br />
-          <code>cd Animation-Arcade</code>
-          <br>
-          <strong>Step 3: Use the recommended Node.js version</strong><br />
-          <code>nvm use</code>
-         <br>
-          <strong>Step 4: Install project dependencies</strong><br />
-          <code>npm install</code>
-          <br>
-          <strong>For additional details on setting up the environment automatically, refer to the documentation below.</strong>
-          <br />
-          <a href="./pdf.html">More info</a>
+        <strong>Step 1: Clone the project repository to your local machine using Git</strong><br />
+        <code>git clone &lt;repo-url&gt;</code>
+        <br>
+        <strong>Step 2: Navigate to the project directory</strong><br />
+        <code>cd Animation-Arcade</code>
+        <br>
+        <strong>Step 3: Use the recommended Node.js version</strong><br />
+        <code>nvm use</code>
+        <br>
+        <strong>Step 4: Install project dependencies</strong><br />
+        <code>npm install</code>
+        <br>
+        <strong>For additional details on setting up the environment automatically, refer to the documentation
+          below.</strong>
+        <br />
+        <a href="./pdf.html">More info</a>
         </li>
       </ol>
     </section>
@@ -208,5 +209,36 @@
     <p>&copy; 2025 Animation-Arcade Project</p>
   </footer>
 </body>
+<script>
+  const track = document.querySelector(".carousel-track");
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector(".next");
+  const prevButton = document.querySelector(".prev");
 
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  nextButton.addEventListener("click", () => {
+    if (currentIndex === slides.length - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    updateCarousel();
+  });
+
+  prevButton.addEventListener("click", () => {
+    if (currentIndex === 0) {
+      currentIndex = slides.length - 1;
+    } else {
+      currentIndex--;
+    }
+    updateCarousel();
+  });
+
+  updateCarousel();
+</script>
 </html>

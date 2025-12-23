@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="project.css">
 </head>
 <body>
-
   <header class="site-header">
     <nav class="navbar">
       <div class="nav-logo">
@@ -28,57 +27,57 @@
     </nav>
   </header>
   <main>
-  <section>
-    <h2>Overview</h2>
-    <p>
-      Animation-Arcade is a frontend project built to demonstrate how a modern,
-      production-ready frontend workflow works in real-world teams.
-    </p>
-    <p>
-      The focus of this project is not only UI or animations, but automation —
-      ensuring code quality, consistency, and reliability from development
-      to deployment.
-    </p>
-  </section>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Animation-Arcade is a frontend project built to demonstrate how a modern,
+        production-ready frontend workflow works in real-world teams.
+      </p>
+      <p>
+        The focus of this project is not only UI or animations, but automation —
+        ensuring code quality, consistency, and reliability from development
+        to deployment.
+      </p>
+    </section>
 
-  <section>
-    <h2>Automation Goals</h2>
-    <ul>
-      <li>Enforce JavaScript and CSS code quality</li>
-      <li>Automatically run tests on file changes</li>
-      <li>Block bad commits using Git hooks</li>
-      <li>Enforce clean and meaningful commit messages</li>
-      <li>Ensure CI checks match local checks</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Automation Goals</h2>
+      <ul>
+        <li>Enforce JavaScript and CSS code quality</li>
+        <li>Automatically run tests on file changes</li>
+        <li>Block bad commits using Git hooks</li>
+        <li>Enforce clean and meaningful commit messages</li>
+        <li>Ensure CI checks match local checks</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2 id="consistency">Step 1: Environment Consistency (Node.js)</h2>
-    <p>
-      Use NVM and lock the Node.js version across the entire project.
-    </p>
+    <section>
+      <h2 id="consistency">Step 1: Environment Consistency (Node.js)</h2>
+      <p>
+        Use NVM and lock the Node.js version across the entire project.
+      </p>
 
-    <h3>Implementation</h3>
-    <pre>
+      <h3>Implementation</h3>
+      <pre>
 .nvmrc
 24.11.1
     </pre>
 
-    <h3>Result</h3>
-    <p>
-      Local development, Git hooks, and GitHub Actions all use the same Node version.
-    </p>
-  </section>
+      <h3>Result</h3>
+      <p>
+        Local development, Git hooks, and GitHub Actions all use the same Node version.
+      </p>
+    </section>
 
-  <section>
-    <h2 id="tools">Step 2: Project Scripts & Tooling</h2>
-    <p>
-      All automation starts from <code>package.json</code>.
-      Developers interact with the workflow using simple npm commands.
-    </p>
+    <section>
+      <h2 id="tools">Step 2: Project Scripts & Tooling</h2>
+      <p>
+        All automation starts from <code>package.json</code>.
+        Developers interact with the workflow using simple npm commands.
+      </p>
 
-    <h3>Key Scripts</h3>
-    <pre>
+      <h3>Key Scripts</h3>
+      <pre>
 {
   "scripts": {
     "lint": "eslint .",
@@ -90,20 +89,20 @@
 }
     </pre>
 
-    <p>
-      These scripts ensure linting, testing, and Git hooks work consistently
-      for every developer.
-    </p>
-  </section>
+      <p>
+        These scripts ensure linting, testing, and Git hooks work consistently
+        for every developer.
+      </p>
+    </section>
 
-  <section>
-    <h2 id="eslinting">Step 3: JavaScript Linting (ESLint)</h2>
-    <p>
-      ESLint is used to catch bugs early and enforce modern JavaScript best practices.
-    </p>
+    <section>
+      <h2 id="eslinting">Step 3: JavaScript Linting (ESLint)</h2>
+      <p>
+        ESLint is used to catch bugs early and enforce modern JavaScript best practices.
+      </p>
 
-    <h3>ESLint Configuration (Flat Config)</h3>
-    <pre>
+      <h3>ESLint Configuration (Flat Config)</h3>
+      <pre>
 import js from "@eslint/js";
 import globals from "globals";
 
@@ -123,17 +122,17 @@ export default [
   }
 ];
     </pre>
-  </section>
+    </section>
 
-  <section>
-    <h2 id="stylelint">Step 4: CSS Linting (Stylelint)</h2>
-    <p>
-      Stylelint ensures CSS remains valid, consistent, and easy to maintain.
-    </p>
+    <section>
+      <h2 id="stylelint">Step 4: CSS Linting (Stylelint)</h2>
+      <p>
+        Stylelint ensures CSS remains valid, consistent, and easy to maintain.
+      </p>
 
 
-    <h3>Stylelint Configuration</h3>
-    <pre>
+      <h3>Stylelint Configuration</h3>
+      <pre>
 {
   "extends": ["stylelint-config-standard"],
   "rules": {
@@ -145,17 +144,17 @@ export default [
   }
 }
     </pre>
-  </section>
+    </section>
 
-  <section>
-    <h2 id="testing">Step 5: Unit Testing (Jest)</h2>
-    <p>
-      Jest is used to validate JavaScript logic automatically.
-      Tests run locally, during commits, and again in CI.
-    </p>
+    <section>
+      <h2 id="testing">Step 5: Unit Testing (Jest)</h2>
+      <p>
+        Jest is used to validate JavaScript logic automatically.
+        Tests run locally, during commits, and again in CI.
+      </p>
 
-    <h3>Sample Function & Test</h3>
-    <pre>
+      <h3>Sample Function & Test</h3>
+      <pre>
 export function add(a, b) {
   return a + b;
 }
@@ -165,48 +164,48 @@ test("adds two numbers", () => {
 });
     </pre>
 
-    <p>
-      This ensures broken logic never reaches the main branch.
-    </p>
-  </section>
+      <p>
+        This ensures broken logic never reaches the main branch.
+      </p>
+    </section>
 
-  <section>
-    <h2 id="commitlint">Step 6: Commit Message Enforcement</h2>
-    <p>
-      Commitlint enforces the Conventional Commits standard
-      to maintain a clean and readable Git history.
-    </p>
+    <section>
+      <h2 id="commitlint">Step 6: Commit Message Enforcement</h2>
+      <p>
+        Commitlint enforces the Conventional Commits standard
+        to maintain a clean and readable Git history.
+      </p>
 
-    <pre>
+      <pre>
 ❌ wrong message
 ✅ feat(animation): add bounce effect
     </pre>
-  </section>
+    </section>
 
-  <section>
-    <h2 id="husky">Step 7: Pre-Commit Automation (Husky)</h2>
-    <p>
-      Husky runs automated checks before every commit.
-      If any check fails, the commit is blocked.
-    </p>
+    <section>
+      <h2 id="husky">Step 7: Pre-Commit Automation (Husky)</h2>
+      <p>
+        Husky runs automated checks before every commit.
+        If any check fails, the commit is blocked.
+      </p>
 
-    <h3>Pre-Commit Hook</h3>
-    <pre>
+      <h3>Pre-Commit Hook</h3>
+      <pre>
 npx eslint .
 npx stylelint "**/*.css"
 npm test
     </pre>
-  </section>
+    </section>
 
-  <section>
-    <h2 id="githubactions">Step 8: Continuous Integration (GitHub Actions)</h2>
-    <p>
-      GitHub Actions runs the same checks as local development,
-      ensuring consistency across environments.
-    </p>
+    <section>
+      <h2 id="githubactions">Step 8: Continuous Integration (GitHub Actions)</h2>
+      <p>
+        GitHub Actions runs the same checks as local development,
+        ensuring consistency across environments.
+      </p>
 
-    <h3>CI Workflow</h3>
-    <pre>
+      <h3>CI Workflow</h3>
+      <pre>
 name: Lint & Test
 
 on: [push, pull_request]
@@ -223,14 +222,12 @@ jobs:
       - run: npm test
     </pre>
 
-    <p>
-      Pull requests cannot be merged unless all checks pass.
-    </p>
-  </section>
-      <a href="#" class="top-btn"><img src="../pictures/top.png" alt="Top Icon"></a>
-
- </main>
-
-
+      <p>
+        Pull requests cannot be merged unless all checks pass.
+      </p>
+    </section>
+    <a href="#" class="top-btn"><img src="../pictures/top.png" alt="Top Icon"></a>
+  </main>
 </body>
+
 </html>
