@@ -27,7 +27,7 @@ main {
 
 pre {
   background-color: var(--color-code-bg);
-  padding: 1.2rem 1.4rem;
+  padding: 1.4rem 1.5rem 0rem;                    
   overflow-x: auto;
   border-left: 5px solid var(--color-primary);
   font-size: 0.9rem;
@@ -37,6 +37,7 @@ pre {
 }
 
 pre code {
+  display: block;
   font-family: "Fira Code", monospace;
   line-height: 1.6;
 }
