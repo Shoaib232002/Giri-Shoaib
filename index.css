@@ -207,34 +207,39 @@ footer {
 }
 
 .top-btn {
-  position: fixed;
-  right: 1.5em;
-  bottom: 1.5em;
-  z-index: 1000;
-  background-color: #f1f1f1;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+    position: fixed;
+    right: 1.5em;
+    bottom: 1.5em;
+    z-index: 1000;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
 .top-btn img {
     height: 3em;
     width: 3em;
     opacity: 0.7;
 }
+
 .top-btn:hover {
-  background-color: #e6e6e6;
-  transform: translateY(-2px);
+    background-color: #e6e6e6;
+    transform: translateY(-2px);
 }
-.internship-project{
+
+.internship-project {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1em;
+    gap: 1em;
 }
-.intern-project-button{
+
+.intern-project-button {
     padding: 1em;
     border-radius: 20px;
     border: 0;
@@ -244,6 +249,7 @@ footer {
     font-size: large;
     gap: 0.5em;
 }
+
 @media (max-width: 768px) {
 
     .profile {
@@ -294,13 +300,16 @@ footer {
         height: 150px;
         width: 150px;
     }
+
     .card-giri,
     .card-shoaib {
         padding: 0.5em;
     }
-    .intern-project-button{
+
+    .intern-project-button {
         font-size: small;
     }
+
     .card {
         border-radius: 25px;
     }
